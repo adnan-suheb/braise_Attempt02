@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="./css/helper.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- header navbar section -->
+    <header class="navHeader">
+        <div class="container ">
+            <nav class="navbar navBar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <button id="navCollapseBtn" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+                <button id="navOpenBtn" class="navbar-toggler d-none" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-xmark fa-2x"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="allRecipe.html">Recipe</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recipeForm.html">Add Recipe</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- banner slider -->
+    <section class="mainBannerSlider">
+        <div class="container">
+            <div class="owl-carousel owl-theme" id="heroBannerSlider">
+                <div class="item">
+                    <figure class="heroBannerCard">
+                        <div class="heroBannerImg">
+                            <img src="./images/bannerImg/1.jpg" alt="" title="">
+                            <div class="imageDrop"></div>
+                            <button onclick="loadQparam(this)" type="button">View Recipe</button>
+                        </div>
+                        <figcaption>
+                            <div class="recipeDetails">
+                                <p>most popular dishes</p>
+                                <h1>Lamb soup with spices & rice Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit.
+                                    Sit, voluptates?</h1>
+                            </div>
+                            <hr>
+                            <div class="timeAndLevel">
+                                <p><i class="fa-regular fa-clock"></i>10 to 30 min</p>
+                                <p><i class="fa-regular fa-thumbs-up"></i>10 to 30 min</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Invitation card section -->
+    <section class="invitationSec">
+        <div class="container">
+            <div class="invitation text-center">
+                <div class="invitationDetails">
+                    <div class="invitationHead">
+                        <h3>Hello there! I am Maggy. Start cooking with me.</h3>
+                    </div>
+                    <div class="invitationLinks text-center">
+                        <a href="javascript:;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="javascript:;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:;"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                    <div class="invitationBtn">
+                        <a href="allRecipe.html">
+                            <button href="allRecipe.html">view more</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="invitationImg">
+                    <img src="./images/invitation/mainImg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cards section -->
+    <section class="cardsSection">
+        <div class="container">
+            <div class="row">
+                <div class="cardSecHeading">
+                    <h3 class="mb-0">Start using your kitchen</h3>
+                </div>
+            </div>
+            <div class="row" id="trendingRecipeContainer">
+                <div class="col-md-3 col-sm-6">
+                    <figure class="recipeCards">
+                        <div class="recipeImg">
+                            <img src="./images/cards/1.jpg" alt="" title="">
+                            <div class="imgBackDrop" id="imgBackDrop"></div>
+                            <button type="button">View Recipe</button>
+                        </div>
+                        <figcaption>
+                            <div class="recipeDetails">
+                                <p>most popular dishes</p>
+                                <h1>Lamb soup with spices & rice Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit.
+                                    Sit, voluptates?</h1>
+                            </div>
+                            <hr>
+                            <div class="timeAndLevel">
+                                <p><i class="fa-regular fa-clock"></i> 10 to 30 min</p>
+                                <p><i class="fa-regular fa-thumbs-up"></i> easy</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter section -->
+    <section class="newsletterSec">
+        <div class="container">
+            <div class="newsletter text-center">
+                <div class="newsletterHead">
+                    <h3>
+                        Our newsletter
+                    </h3>
+                </div>
+                <div class="newsletterPara">
+                    <h3>Subscribe to our newsletter & keep up with our latest recipes and organized workshops.</h3>
+                </div>
+                <div class="newsletterForm">
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <label for="newsletterEmail"></label>
+                            <input type="email" required placeholder="Enter you email address here" id="newsletterEmail">
+                            <button id="newsletterBtn" type="submit"><i  class="fa-solid fa-location-arrow fa-2x"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- brand slider section -->
+    <section class="brandSliderSec">
+        <div class="container">
+            <div class="owl-carousel owl-theme brandSlider" id="brandSlider">
+                <div class="item">
+                    <div class="brandImg">
+                        <a href="javascript:;">
+                            <img src="./images/brands/brand1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footerSec">
+        <div class="container">
+            <div class="footerLogo text-center">
+                <img src="./images/footer/footerLogo.png" alt="">
+            </div>
+            <div class="footerPara text-center">
+                <p>Theme especially made for cooking experts, novices & all who enjoy sharing their recipes.
+                </p>
+            </div>
+            <div class="footerIcon text-center">
+                <a href="javascript:;">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="javascript:;">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="javascript:;">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </div>
+            <div class="footerForm text-center">
+                <form id="footerForm">
+                    <div class="form-group">
+                        <label for="footrEmail"></label>
+                        <input type="email" required placeholder="Enter you email address here" id="footerEmail">
+                        <button id="footerEmailBtn" type="submit"><i  class="fa-solid fa-location-arrow fa-2x"></i></button>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="footerStrip">
+                <a href="javascript:;">Privacy Policy</a>
+                <p><i class="fa-regular fa-copyright"></i> 2024 Qode Interactive, All Rights Reserved</p>
+
+            </div>
+        </div>
+    </footer>
+
+
+<div class="loader d-none" id="loader">
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js"></script>
+    <script src="./js/utility.js"></script>
+    <script src="./js/index.js"></script>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
